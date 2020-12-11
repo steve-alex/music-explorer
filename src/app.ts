@@ -12,7 +12,6 @@ class App {
     this.app = express();
     this.port = port;
 
-    this.connectToDatabase()
     this.initializeMiddlewares();
     this.initiatilzeControllers();
   }
@@ -21,10 +20,6 @@ class App {
     this.app.listen(this.port, () => {
       console.log(`App listening on the port ${this.port}`);
     })
-  }
-
-  private connectToDatabase(){
-    // TODO - Connect to the database
   }
 
   private initializeMiddlewares() {
