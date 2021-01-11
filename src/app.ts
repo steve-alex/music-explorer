@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { Application } from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import MainController from './Controllers/MainController';
@@ -6,7 +6,7 @@ import AuthController from './Controllers/AuthController';
 
 class App {
   public port: number;
-  public app: express.Application;
+  public app: Application;
 
   constructor(port: number){
     this.app = express();
