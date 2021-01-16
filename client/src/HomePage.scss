@@ -1,0 +1,18 @@
+.items-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap
+}
+
+.item-container {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+  }
+}
